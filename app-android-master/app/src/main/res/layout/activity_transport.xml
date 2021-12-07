@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2323"
+    tools:context=".Transport">
+
+
+    <ImageView
+        android:id="@+id/transportBack"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="355dp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:padding="2dp"
+        android:text="Airport - Baščaršija (Vijećnica)"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/googlesans_regular"
+        android:padding="5dp"
+        android:text="In order to get to the Old Town from the airport, your closest public transportation would be the bus station 'Dobrinja 5' with line 5a of Centrotrans' bus. You will have exactly 18 stations to Vijećnica where you can exit on any of the last 3 as they are relatively close to each other. The ticket for this bus is 2KM (regardless of travel distance)"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:padding="2dp"
+        android:text="Željeznička stanica (Railway station) - Baščaršija (Vijećnica)"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/googlesans_regular"
+        android:padding="5dp"
+        android:text="In order to get to the Old Town from the railway/main bus station, your closest public transportation would be the tram station 'Željeznička stanica' with line 1 of Gras. You will have exactly 8 stations to Vijećnica where you can exit on any of the last 3 as they are relatively close to each other. The ticket for this tram is 1.6KM (regardless of travel distance)"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:gravity="center"
+        android:text="Public Transport"
+        android:textAlignment="center"
+        android:textColor="#7698F3"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:gravity="center"
+        android:text="Private Transport"
+        android:textAlignment="center"
+        android:textColor="#7698F3"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/googlesans_regular"
+        android:padding="5dp"
+        android:text="The most used public transportation in Sarajevo is Taxi (Cab). The starting prices usually go between 1.5KM to 2KM and around 1KM/kilometer. Driving from the airport to Baščaršija could be around 20KM, while from the Railway station that price shouldn't be above 10KM. Stay aware!"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/googlesans_regular"
+        android:padding="5dp"
+        android:text="The most popular taxi services: Crveni Taxi (Red Taxi) - +38733760600 ; Sarajevo Taxi - +38733600666 ; "
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:fontFamily="@font/googlesans_regular"
+        android:padding="5dp"
+        android:text="You can also use either 'beebee' or 'nextbike' as a self-transportation system. Beebee are electric scooters that are similar to a cab price while nextbikes are significantly cheaper. Search for their app on Google Play."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

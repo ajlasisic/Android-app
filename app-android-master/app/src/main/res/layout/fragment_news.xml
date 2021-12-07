@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newsbackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/antara_distance"
+        android:gravity="center"
+        android:text="Latest news"
+        android:textAlignment="center"
+        android:textColor="#776565"
+        android:textSize="60sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="156dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/covidImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:src="@drawable/covid19" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="253dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/covidText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/googlesans_bold"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="10dp"
+                android:text="Catch up with the latest news about COVID-19 restrictions and situation in Sarajevo!"
+                android:textAlignment="center" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="156dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/contactImage"
+                android:layout_width="match_parent"
+                android:onClick="onClick"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/contactus" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="253dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/contactText"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/googlesans_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="We love giving our visitors the best experience in Sarajevo! In case you want to know more or figure out what to do, contact us and we will be happy to help you!"
+                android:textAlignment="center" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="156dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ibuImage"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ibulogo"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="253dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/ibuText"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/googlesans_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Looking to study in Sarajevo? We recommend International Burch University! After all, we are students of IBU and we created this application based on the knowledge we received from there."
+                android:textAlignment="center" />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

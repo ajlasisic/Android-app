@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutbackground">
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="412dp"
+        android:layout_height="245dp"
+        android:layout_marginTop="108dp"
+        app:autoPlay="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showFullScreenButton="false"
+        app:videoId="JuzW1gtO5DQ" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="416dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/antara_distance"
+        android:text="About Sarajevo"
+        android:textAlignment="center"
+        android:textSize="80dp"
+        android:textColor="#E1E1E1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="392dp"
+        android:layout_height="276dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="87dp"
+        android:background="#9F5F6F8A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/firstText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/googlesans_regular"
+            android:textAlignment="center"
+            android:text="Sarajevo is the capital city of Bosnia and Herzegovina with 141.5 square kilometers being the biggest city in the country. It is elevated 500m above sea level with around 300,000 inhabitants with different cultures and religions. The city is consisted of four municipialities: Stari Grad (Old City), Centar (Center), Novo Sarajevo (New Sarajevo), Novi Grad (New City). Baščaršija is located in Old City which is also the most popular, unavoidable destination for tourists for it's historical significance. We recommend taking a stroll from Vječna Vatra (The Eternal Flame) through Ferhadija street all the way to Sebilj where you can take a rest at the local restaurants and taste Bosnian specialities like Burek or Ćevapčići. However if you like to walk further distances, then your starting point should be Vilsonovo Šetalište instead, which is the most popular place to take a walk, especially from 17:00 - 00:00 as traffic is forbidden at these hours. After taking a break and having lunch at Baščaršija, you can enjoy the sunset from the Yellow Fortress (which entrance is free of charge) and also have a chance to see Sarajevo from one of the best viewpoints. In case you would like to enjoy the sunset while at dinner, we recommend restaurants like Park Prinčeva, Kibe Mahala or perhaps Sunnyland which is located on Trebević mountain. If you are looking to avoid traffic, the best option to climb Trebević is by the cable car which has a starting point from the center and leaves you at the top where you have another viewpoint and a restaurant Pino Nature Hotel nearby. Bjelašnica and Igman are also a good place to enjoy the mountain's fresh air, however they are a bit further (30-minute drive), but definitely worth visiting to enjoying the nature and get some rest. Our personal place to enjoy a stroll through the woods and listen to the sounds of nature is Skakavac. The road to the nature perserve Skakavac isn't the best, however once reaching it you would see that it is worth it. There you are surrounded with tall trees and their shades as you hike to the waterfall. These are just some of the great things you can visit while you are at Sarajevo and we haven't mentioned the nightlife, the Tunnel of Hope, Gazi Husrev-beg's Mosque, Inat Kuca (House of spite) and many more sightseeings. In case you are interested in more, please contact us and we would be happy to give you advice on your trip." />
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

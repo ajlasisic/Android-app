@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2323"
+    tools:context=".Food">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="355dp"
+        android:onClick="previousPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:paddingLeft="2dp"
+        android:text="Restaurants"
+        android:textColor="@color/background"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/googlesans_regular"
+        android:padding="5dp"
+        android:text="The most popular, well-placed and quality restaurants in Sarajevo are considered to be: The Four Rooms of Mrs. Safije, Kibe Mahala, Golf Club Restoran, Park Prinčeva, Tavola, Dveri, Avlija and many more. They offer a vast food and wine menu and they are considered to be over average when it comes to the price"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:paddingLeft="2dp"
+        android:text="Pubs"
+        android:textColor="@color/background"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/googlesans_regular"
+        android:padding="5dp"
+        android:text="If Sarajevo doesn't lack something, that is it's nightlife, especially fridays and saturdays. The most popular street at night is 'Zelenih beretki', the street next to Hotel Europe, thanks to the Tesla Pub, City Lounge and City Pub that are located next to it. Other than that, people enjoy their nights with fine drinks and food at Blind Tiger, Cheers, Dorian Gray, People's, Vučko and many others!"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/googlesans_bold"
+        android:paddingLeft="2dp"
+        android:text="Fast Food and Delivery"
+        android:textColor="@color/background"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/googlesans_regular"
+        android:padding="5dp"
+        android:text="There are many tasty popular Fast Food options across the entire city. From foreign franchises like McDonald's to local fast foods like Toto, Šah Mat Burger... The best place to check these kind of restaurants and even have a chance to deliver food, whether that be from one of the best restaurants in the city or just a new fast food, you can do that from Korpa.ba! Check them out by pressing the image below."
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_editor_absoluteX="10dp"
+        app:layout_editor_absoluteY="390dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="184dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:fontFamily="@font/googlesans_regular"
+        android:text="You can use the app to check out great, top-picked restaurants and see where they are located and what are they working hours."
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/korpaImage"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageView
+        android:id="@+id/korpaImage"
+        android:layout_width="147dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="34dp"
+        android:onClick="redirect"
+        app:layout_constraintEnd_toStartOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:srcCompat="@drawable/korpa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
